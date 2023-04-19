@@ -1,0 +1,15 @@
+<div>
+    <form #withdrawlform="ngForm" (ngSubmit)="withdrawldata(withdrawlform)">
+        <label>ID</label>
+        <input type="number" name="accid" id="accid" #accid (ngModel)="accid">
+        <br>
+        <label>Name</label>
+        <input type="text" id="accname"  name="accname" #accname (ngModel)="accname">
+        <br>
+        <label>Balance</label>
+        <input type="number" id="accbal"  name="accbal" #accbal (ngModel)="accbal">
+        <br>
+       <input type="submit" value="Deposit">
+   
+    </form>
+</div>
